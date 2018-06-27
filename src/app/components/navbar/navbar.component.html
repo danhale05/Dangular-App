@@ -1,0 +1,20 @@
+<nav id="navee" class="navbar navbar-expand navbar-dark mb-4">
+    <!-- bg-info -->
+    <div class="container">
+        <a routerLink="/" class="navbar-brand">Dangular App</a>
+        <div>
+            <ul class="navbar-nav ml-auto">
+                <!-- routerLink Active listed for active links with routerLinkActiveOptions to change which item is active -->
+                <li class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true }">
+                    <a routerLink="/" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true }">
+                    <a routerLink="/users" class="nav-link">Users</a>
+                </li>
+                <li class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true }">
+                    <a routerLink="/posts" class="nav-link">Posts</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
